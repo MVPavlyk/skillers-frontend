@@ -1,0 +1,156 @@
+.main__header {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: #FFFFFF;
+}
+
+.header__logo {
+    height: 35px;
+}
+
+.switch_btn_en,
+.switch_btn_uk {
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 6px;
+    transition: 400ms ease-in-out;
+}
+
+.switch_btn_ball_en {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../../images/header/Flag_of_the_United_Kingdom.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transform: translate(39px);
+    transition: all 400ms ease-in-out;
+}
+
+.switch_btn_ball_uk {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../../images/header/Flag_of_Ukraine.svg");
+    background-size: cover;
+    border-radius: 50%;
+    transition: all 400ms ease-in-out;
+}
+
+.switch_btn_name_en {
+    transform: translate(-22px);
+}
+
+.switch_btn_name_uk {
+    transform: translate(10px);
+}
+
+.switch_btn_name_en,
+.switch_btn_name_uk {
+    transition: all 400ms ease-in-out;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+@media (max-width: 900px) {
+    .main__header {
+        height: 70px;
+    }
+
+    .header__logo{
+        height: 30px;
+    }
+
+    .switch_btn_en,
+    .switch_btn_uk,
+    .switch_btn {
+        height: 30px;
+        width: 70px;
+        padding: 4px;
+    }
+
+    .switch_btn_ball_en,
+    .switch_btn_ball_uk {
+        width: 23px;
+        height: 23px;
+    }
+
+    .switch_btn_name {
+        transform: translate(5px);
+        font-size: 8px;
+    }
+
+    .dark_switch_btn_name {
+        transform: translate(-14px);
+        font-size: 8px;
+    }
+
+    .switch_btn_name_en {
+        transform: translate(-13px);
+    }
+
+    .switch_btn_name_en,
+    .switch_btn_name_uk {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .main__header {
+        height: 60px;
+    }
+
+    .header__logo{
+        height: 25px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    .switch_btn_en,
+    .switch_btn_uk,
+    .switch_btn,
+    .dark_switch_btn {
+        height: 30px;
+        width: 60px;
+        padding: 4px;
+    }
+
+    .switch_btn_name {
+        transform: translate(4px);
+        font-size: 7px;
+    }
+
+    .dark_switch_btn_name {
+        transform: translate(-17px);
+        font-size: 7px;
+    }
+
+    .dark_switch_btn_ball {
+        transform: translate(28px);
+    }
+
+    .switch_btn_name_en {
+        transform: translate(-18px);
+    }
+
+    .switch_btn_name_uk {
+        transform: translate(6px);
+    }
+
+    .switch_btn_ball_en {
+        transform: translate(28px);
+    }
+}

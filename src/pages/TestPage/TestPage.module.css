@@ -1,0 +1,45 @@
+.test__page {
+    min-height: calc(100vh - 160px);
+    padding: 40px 50px;
+}
+
+.test__page_title {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid black;
+}
+
+.exercises__wrap {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.result__block {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.check__btn {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 24px;
+    background-color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.result__wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
