@@ -2,7 +2,7 @@
     width: 100%;
     box-shadow: 5px 5px 15px 5px rgba(175, 175, 175, 0.56);
     border-radius: 0 20px 0 0;
-    padding: 20px 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     font-size: 22px;
@@ -14,7 +14,10 @@
 }
 
 .chosen__variant,
-.simple__variant {
+.simple__variant,
+.correct__chosen_answer,
+.incorrect__chosen_answer,
+.correct__answer {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -28,26 +31,41 @@
 .correct__chosen_answer {
     color: green;
     text-decoration: underline;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
 }
 
 .correct__answer {
     color: green;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
 }
 
 .incorrect__chosen_answer {
     color: crimson;
     text-decoration: underline;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
 }
 
 .check__arrow_block {
     width: 20px;
+}
+
+@media (max-width: 767px) {
+    .exercise__block {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .variants__wrap {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .exercise__block {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .variants__wrap {
+        padding: 5px 15px;
+        font-size: 10px;
+    }
 }

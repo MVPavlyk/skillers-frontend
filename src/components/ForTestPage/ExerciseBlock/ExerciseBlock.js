@@ -30,10 +30,9 @@ const ExerciseBlock = (exercise) => {
                     currentVariants.map(variant =>
                         <div onClick={() => !checked && setCVariant(variant)}
                              key={variant.id}
-                             className={checked ? (variant.attributes.correct ? (cVariant === variant ? css.correct__chosen_answer : css.correct__answer) : (cVariant === variant ? css.incorrect__chosen_answer : {})) : cVariant === variant ? css.chosen__variant : css.simple__variant}>
-
-                            {variant.attributes.text}
+                             className={checked ? (variant.attributes.correct ? (cVariant === variant ? css.correct__chosen_answer : css.correct__answer) : (cVariant === variant ? css.incorrect__chosen_answer : css.simple__variant)) : cVariant === variant ? css.chosen__variant : css.simple__variant}>
                             <div className={css.check__arrow_block}>{(cVariant === variant) && '✓'}</div>
+                            {variant.attributes.text}
                         </div>
                     )
                 }

@@ -7,6 +7,10 @@
     justify-content: space-between;
     padding: 0 40px;
     color: #FFFFFF;
+    position: relative;
+    z-index: 3;
+    transform-style: preserve-3d;
+    transform: translateZ(2px);
 }
 
 .header__logo {
@@ -62,13 +66,77 @@
 }
 
 
+.header__left {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.header__link {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.user__block {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.user__block img {
+    height: 30px;
+}
+
+.burger__menu_open,
+.burger__menu_close{
+    border-top: 3px solid;
+    border-image: linear-gradient(40deg, #00DBDE 0%, #FC00FF 100%);
+    border-image-slice: 1;
+    position: absolute;
+    width: 100%;
+    background-color: #000000;
+    min-height: 100px;
+    top: 60px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px;
+    row-gap: 10px;
+    transition: all .2s linear;
+    transform-style: preserve-3d;
+    transform: translateZ(-1px);
+
+}
+
+.burger__menu_close {
+    top: -250px;
+    transition: all .2s linear;
+}
+
+.burger__btn{
+    display: none;
+}
+
+
 @media (max-width: 900px) {
     .main__header {
         height: 70px;
     }
 
-    .header__logo{
+    .header__logo {
         height: 30px;
+    }
+
+    .user__block img {
+        height: 25px;
+    }
+
+    .header__link {
+        font-size: 18px;
     }
 
     .switch_btn_en,
@@ -107,18 +175,45 @@
 }
 
 @media (max-width: 767px) {
+    .burger__btn{
+        display: block;
+    }
+
+
+    .header__left {
+        column-gap: 15px;
+        display: none;
+    }
+
     .main__header {
         height: 60px;
     }
 
-    .header__logo{
-        height: 25px;
+    .header__logo {
+        height: 20px;
+    }
+
+    .header__link {
+        font-size: 14px;
+    }
+
+    .user__block img {
+        height: 18px;
     }
 
 }
 
 
 @media (max-width: 550px) {
+    .main__header {
+        padding: 0 20px;
+    }
+
+
+    .header__logo {
+        height: 14px;
+    }
+
     .switch_btn_en,
     .switch_btn_uk,
     .switch_btn,

@@ -10,7 +10,9 @@
     font-weight: 500;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    border-bottom: 3px solid black;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(213deg, #00DBDE 0%, #FC00FF 100%);
+    border-image-slice: 1;
 }
 
 .tests__wrap {

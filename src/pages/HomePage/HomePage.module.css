@@ -12,14 +12,40 @@
 }
 
 .home__welcome {
-    font-size: 44px;
-    font-weight: 600;
+    font-size: 38px;
+    font-weight: 500;
 }
 
 .home__description {
     font-size: 36px;
     text-align: center;
 }
+
+.register__btn {
+    height: 52px;
+    border-radius: 26px;
+    padding: 0 30px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #FFFFFF;
+    border: 2px solid black;
+    transition: all .2s linear;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+/*
+.register__btn:hover{
+    box-shadow: 2px 2px 15px 5px #D2D2D2;
+    transition: all .2s linear;
+}
+*/
+
 
 @media (max-width: 767px) {
     .home__welcome {
@@ -32,6 +58,12 @@
 
     .home__description {
         font-size: 28px;
+    }
+
+    .register__btn{
+        font-size: 22px;
+        height: 46px;
+        padding: 0 20px;
     }
 }
 
